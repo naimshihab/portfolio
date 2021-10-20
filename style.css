@@ -1,0 +1,72 @@
+* {padding: 0; margin: 0;}
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap'); /* Dosis */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+/* Navbar */
+.navbar-brand { font-weight: 600; }
+.nav-link { margin: 0 5px; font-weight: 500; }
+.nav-link:hover { color: #113CFC !important; }
+
+/* Jumbotron */
+.jumbotron { margin-bottom: -1px; }
+.jumbotron .home { cursor: default; }
+.jumbotron .picture-utama { box-shadow: 0 0 6px #916BBF; }
+.jumbotron p span { font-weight: 600; }
+
+/* Jumbotron 2 */
+.jumbo-dua { background-color: #E6E6E6; }
+.jumbo-dua h4 { font-family: 'Dosis', sans-serif; margin-top: -20px; font-weight: 600; }
+.jumbo-dua .about-row  { margin-top: 25px; }
+.jumbo-dua .about-row p { margin-top: 50px; }
+.jumbo-dua .picture-aboutMe { width: 250px; box-shadow: 0 10px 10px black; }
+.jumbo-dua .about-row .modal-title, .formal-biography { font-family: 'Open Sans Condensed', sans-serif; }
+
+/* Jumbotron 3 */
+.jumbo-tiga { margin-bottom: -60px; }
+.jumbo-tiga h4 {
+  font-family: 'Dosis', sans-serif;
+  margin-top: -20px;
+  font-weight: 600;
+}
+.jumbo-tiga .card:hover { box-shadow: 0 0 50px #D9CAB3; transition: 0.1s; }
+.jumbo-tiga .documentation-rowSatu { margin-top: 30px; }
+.jumbo-tiga .card { margin-bottom: 20px; }
+.jumbo-tiga .card button { padding: 5px 40px; }
+
+/* Jumbotron 4 */
+.jumbo-empat { background-color: #E6E6E6; }
+.jumbo-empat .picture-sosmed { width: 250px; height: 300px; box-shadow: 0 10px 10px black; }
+.jumbo-empat i { font-size: 50px; cursor: default; margin: 50px 15px; }
+.jumbo-empat h4 { font-family: 'Open Sans Condensed', sans-serif; }
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #3D56B2;
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+    margin-bottom: -8px;
+  }
+  .jumbo-dua .picture-aboutMe { border-left: 5px solid #FFB085; }
+  .jumbo-empat .picture-sosmed { border-right: 5px solid salmon; }
+}
+
+/* PHONE VERSION */
+@media (max-width: 576px) {
+  .home h1 { font-size: 35px; }
+  .jumbo-dua h4 { font-size: 20px; margin-top: 5px; }
+  .jumbo-dua .picture-aboutMe { width: 250px; margin-top: 10px; }
+  .jumbo-dua .about-row p { margin-top: -5px; }
+  .jumbo-dua .about-row button { margin-bottom: 15px; }
+  .jumbo-dua .picture-aboutMe { border-top: 5px solid #FFB085; }
+  .jumbo-tiga h4 { font-size: 20px; margin-top: 5px; margin-bottom: 20px; }
+  .jumbo-empat .picture-sosmed { border-top: 5px solid salmon; }
+  .jumbo-empat h4 { margin-top: 60px; }
+  .jumbo-empat i { margin-top: 20px; }
+}
